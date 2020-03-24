@@ -13,8 +13,9 @@ Expected OUTPUT for this sample:
 
 */
 
-const numbers = [-2, -1, 0, 1, 2];
-const getPositiveNumbers = number => number >= 0;
+function getPositiveNumbers(numbers) {
+  return numbers.filter(number => number >= 0);
+}
 
 
 // If you need, you can always visualize the result with a console.log.
@@ -23,7 +24,7 @@ const getPositiveNumbers = number => number >= 0;
 // Instead of running `npm test`, you can then use `node filter/ex1`
 // (you still need to run `npm test` to make sure you did right).
 
-console.log(numbers.filter(getPositiveNumbers));
+// console.log(getPositiveNumbers([-2, -1, 0, 1, 2]));
 
 // DON'T TOUCH THIS!
 module.exports = getPositiveNumbers;
