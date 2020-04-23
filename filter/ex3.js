@@ -33,7 +33,18 @@ Expected OUTPUT for these sample arguments:
 */
 
 function filterOnPrice(products, maxPrice) {
+  return products.filter(element => element.price <= maxPrice);
 }
+
+// const max = filterOnPrice(
+//   [
+//     { name: "chair", price: 1 },
+//     { name: "book", price: 2 },
+//     { name: "pen", price: 3 }
+//   ],
+//   2
+// );
+// console.log(max);
 
 // DON'T TOUCH THIS!
 module.exports = filterOnPrice;

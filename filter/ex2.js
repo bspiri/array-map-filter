@@ -25,16 +25,8 @@ Expected OUTPUT for this sample:
 
 */
 
-const names = [
-  "Bran Stark",
-  "Cersei Lannister",
-  "Sandor Clegane",
-  "Arya Stark",
-  "Yara Greyjoy",
-  "Sansa Stark"
-];
 function keepStarks(names) {
-  console.log(names.endsWith, "Stark");
+  return names.filter(name => name.endsWith("Stark"));
 }
 
 // DON'T TOUCH THIS!
